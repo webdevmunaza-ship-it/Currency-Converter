@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Currency-Convertor</title>
+</head>
+<body>
+    <main aria-label="Currency-Convertor">
+        <h1 >Currency-Convertor</h1>
+        <header>
+            <label for="Amount">Amount</label>
+            <input id="amount" type="number" min="0 " value="1">
+        </header>
+        <section>
+            <label for="data">Data</label>
+            <input id="data" type="data" name="data">
+        </section>
+        <section>
+            <div>
+              <label for= "from">From </label>
+              <select id="From" name="form">
+              <option value="USD">USD – United States Dollar 💵</option>
+              <option value="PKR">PKR – Pakistani Rupee 🇵🇰</option>
+              <option value="EUR">EUR – Euro 💶</option>
+              <option value="GBP">GBP – British Pound Sterling 💷</option>
+              <option value="INR">INR – Indian Rupee 🇮🇳</option>
+              <option value="AUD">AUD – Australian Dollar 🇦🇺</option>
+              <option value="CAD">CAD – Canadian Dollar 🇨🇦</option>
+              <option value="JPY">JPY – Japanese Yen 💴</option>
+              <option value="CNY">CNY – CNY – Chinese Yuan 🇨🇳</option>
+              <option value="SAR">SAR – Saudi Riyal 🇸🇦</option>
+             </select>
+            </div>
+        </section>
+
+        <div><button for="button"  id="swapBtn"  type="button">Swap</button></div>
+        <section>
+            <div>
+                <label for="to" >TO</label>
+                <select name="to" id="to">
+                    <option value="USD">USD – United States Dollar 💵</option>
+              <option value="PKR">PKR – Pakistani Rupee 🇵🇰</option>
+              <option value="EUR">EUR – Euro 💶</option>
+              <option value="GBP">GBP – British Pound Sterling 💷</option>
+              <option value="INR">INR – Indian Rupee 🇮🇳</option>
+              <option value="AUD">AUD – Australian Dollar 🇦🇺</option>
+              <option value="CAD">CAD – Canadian Dollar 🇨🇦</option>
+              <option value="JPY">JPY – Japanese Yen 💴</option>
+              <option value="CNY">CNY – CNY – Chinese Yuan 🇨🇳</option>
+              <option value="SAR">SAR – Saudi Riyal 🇸🇦</option> 
+                </select>
+            </div>
+        </section>
+        <section>
+            <button id="convertBtn" type="button">Convert</button>
+              <button id="resetBtn" type="button">Reset</button>
+                <button id="savepairBtn" type="button">Save-Pair</button>
+        </section>
+        <section>
+  <div id="resultBox">Result will appear here...</div>
+</section>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>

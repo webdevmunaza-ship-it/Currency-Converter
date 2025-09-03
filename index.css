@@ -1,0 +1,165 @@
+:root {
+   --bg: #f5f7fb;
+   --card: #ffffff;
+   --muted: #64748b;
+   --accent: #2563eb;     /* Blue main accent */
+   --accent-2: #10b981;   /* Green secondary */
+   --danger: #ef4444;     /* Red for danger */
+   --shadow: 0 8px 24px rgba(16,24,40,0.08);
+   --text: #0f1720;
+   --radius: 12px;
+   --gap: 14px;
+   --max-width: 880px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+}
+
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 32px 20px;
+   color: var(--text);
+}
+
+main[aria-label="Currency-Convertor"] {
+   width: 100%;
+   max-width: var(--max-width);
+   background: var(--card);
+   box-shadow: var(--shadow);
+   border-radius: var(--radius);
+   padding: 25px;
+   display: block;
+}
+
+h1 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: var(--accent);
+   font-size: 40px;
+   letter-spacing: 0.2px;
+}
+
+section {
+   display: flex;
+   gap: var(--gap);
+   align-items: center;
+   margin-bottom: 15px;
+   flex-wrap: wrap;
+}
+
+label {
+   display: block;
+   font-size: 14px;
+   color: var(--muted);
+   margin-bottom: 8px;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+   width: 120px; 
+   padding: 12px 14px;
+   border-radius: var(--radius);
+   border: 2px solid #64748b;
+   background-color: #fbfdff;
+   color: var(--text);
+   outline: none;
+   transition: box-shadow .12s ease, border-color .12s ease, transform .06s ease;
+   box-shadow: 0 1px 0 rgba(16,24,40,0.02) inset;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button { 
+   -webkit-appearance: none; 
+   margin: 0; 
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+   border-color: var(--accent);
+   box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+}
+
+/* Swap button */
+#swapBtn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 45px;
+   width: 90px;
+   border-radius: 10px;
+   border: 2px solid var(--accent-2);
+   background-color: var(--accent-2);
+   color: white;
+   font-size: 16px;
+   font-weight: 700;
+   margin-bottom: 8px;
+   transition: transform .08s ease, box-shadow .12s ease, background .2s ease;
+   cursor: pointer;
+}
+#swapBtn:hover {
+   background-color: #059669; /* darker green */
+}
+#swapBtn:active {
+   background-color: #047857; /* deepest green */
+}
+
+/* General buttons */
+button {
+   padding: 10px 14px;
+   border-radius: 10px;
+   border: 0;
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 16px;
+   transition: background .2s ease, transform .08s ease;
+}
+
+#convertBtn {
+   background-color: var(--danger);
+   color: white;
+}
+#convertBtn:hover {
+   background-color: #b91c1c;
+}
+
+#resetBtn {
+   background-color: var(--accent);
+   color: white;
+}
+#resetBtn:hover {
+   background-color: #1e3a8a;
+}
+
+#savepairBtn {
+   background-color: var(--accent-2);
+   color: white;
+}
+#savepairBtn:hover {
+   background-color: #059669;
+}
+
+
+#resultBox {
+  margin-top: 15px;
+  padding: 12px;
+  border: 2px dashed var(--accent-2);
+  border-radius: 10px;
+  min-height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  background-color: #f9fafb;
+}
